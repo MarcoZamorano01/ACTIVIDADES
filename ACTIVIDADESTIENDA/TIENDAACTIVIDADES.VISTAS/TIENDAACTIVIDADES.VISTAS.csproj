@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClienteVistas\PedidoListarVista.cs" />
+    <Compile Remove="ClienteVistas\PedidoListarVista.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ClienteVistas\PedidoListarVista.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TIENDAACTIVIDADES.BSS\TIENDAACTIVIDADES.BSS.csproj" />
+    <ProjectReference Include="..\TIENDAACTIVIDADES.MODELOS\TIENDAACTIVIDADES.MODELOS.csproj" />
+  </ItemGroup>
+
+</Project>
